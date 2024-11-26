@@ -116,7 +116,7 @@ class SubdlProvider(ProviderRetryMixin, Provider):
         self._season_pack_cache = {}
         self._search_cache = {}
         self._cache_timestamp = {}
-        self._cache_duration = 1800  # Cache duration (30m)
+        self._cache_duration = 900  # -----------------------------> Cache duration (15m)
         self._max_cache_size = 100  # items
         self._cache_lock = Lock()  # Add thread safety
 
